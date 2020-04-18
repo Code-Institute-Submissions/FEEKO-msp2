@@ -97,8 +97,7 @@ $( ".dub" )
    $(".dub").css("color","blue");
    var coords = latlng.split(",");
  var panPoint = new google.maps.LatLng(coords[0], coords[1]);
-  
-    map.setZoom(12);
+   map.setZoom(12);
       map.panTo(panPoint);
 });
 $( ".dub" )
@@ -108,10 +107,10 @@ $( ".dub" )
 
 // zoom on map
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
      var coords = latlng.split(",");
  var panPoint = new google.maps.LatLng(coords[0], coords[1]);
-    $('.locations').mouseover( function() {
+    $('.locations').mouseover(function pan(latlng) {
     map.setZoom(12);
       map.panTo(panPoint);
    });
