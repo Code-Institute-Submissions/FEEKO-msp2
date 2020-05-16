@@ -1,7 +1,7 @@
 # FEEKO-msp2
-# Milestone-Project-1
+
 ## Project Purpose
-A website that displays content and upcoming shows for an upcoming singer and songwriter to reach out to their audience. The website also allows users to buy tickets for shows. It will increase the artist sales, streams and opportunity to get signed or have endorsements from companies.
+A website that displays content and upcoming shows for an upcoming singer and songwriter to reach out to their audience. The website also allows users to view the locations of concerts with google maps api. It will increase the artist sales, streams and opportunity to get signed or have endorsements from companies.
 
 ## UX design
 ![Image of demo](Documentation/responsive.png)
@@ -12,7 +12,6 @@ The users of this site are current supporters, future supporters, and talent age
 ### User stories
 * A fan looking for more content from the artist
 * A supporter trying to find pictures of the artist
-* Other artists trying to send a message to the artist.
 * Endorsers or potential supporter trying to find the artist social media
 * A supporter trying to find where to purchase tickets for performances
 * Music labels scouting for talent.
@@ -21,10 +20,10 @@ The users of this site are current supporters, future supporters, and talent age
 
 
 ## Design
-The color scheme consists of white and grey with green buttons for a clean and modern look.
+The color scheme consists of pink, black and white for a clean and modern look, which corresponds well with the artist design for their new single.
 
 ### Mockups
-The web page is a single page with four separate sections which can been seen in the wireframe:
+The web page has mutiple pages with one page that opens directly to their spotify. This can be seen in the wireframe:
 
 * [Wireframe](https://www.figma.com/file/K0h1YMwVfOuaEDlAAfSLjz/EDR-project-wireframe?node-id=0%3A1)
 
@@ -37,6 +36,7 @@ The web page is a single page with four separate sections which can been seen in
 * Bootstrap
   * HTML
   * CSS 
+  * JS
   * framework (grid system, buttons, modals, jumbotron, cards)- This makes the website more interactive and is easier for users to use. 
 * responsive design- mobile-first - This ensures that users on any device can easily use this website.
 * GitHub -Remote Repository- Allows cohesive and easy collaborations, which helps to create a smooth and responsive website.
@@ -94,5 +94,5 @@ All content was written by me for the artist.
 For all the help and inspiration:
 * Code Institute
 * [Slack](https://slack.com/intl/en-gb/) community
-*[Stack overflow] (https://stackoverflow.com/) 
+* [Stack overflow] (https://stackoverflow.com/) 
 * Seun Owonikoko @seun_mentor
