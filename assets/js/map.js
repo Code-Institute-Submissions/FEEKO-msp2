@@ -1,133 +1,110 @@
+var labels = '123456';
+var labelIndex = 0;
+var map = null;
+var locations = [
+   [ 'Portsmouth',50.819900, -1.086433, 1],
+    ['Leicester',52.636473, -1.139342, 2],
+    ['London',51.505234, -0.153817, 3],
+    ['Manchester',53.481420, -2.242004, 4],
+    ['Scotland', 57.099167, -4.513949, 5],
+    ['Cardiff',51.483623, -3.178960, 6],
+    ['Dublin',53.360073, -6.267658, 7]
+];
 
 function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 3,
-        center: {
-            lat: 54.703429,
-            lng: -2.844944
-        }
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 5,
+        gestureHandling: 'greedy',
+        center: new google.maps.LatLng(54.703429,-2.844944)
     });
-
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-// Locations of shows 
-    var locations = [ 
-        { lat: 50.819900, lng: -1.086433, title: "Portsmouth" },
-        { lat:  52.636473, lng: -1.139342, title: "Leicester" },
-        { lat: 51.505234, lng: -0.153817, title:  "London" },
-        { lat: 53.481420, lng: -2.242004, title: "Manchester" },
-        { lat: 57.170766, lng: -4.182766, title: "Scotland" },
-        { lat: 51.483623, lng: -3.178960, title: "cardiff"},
-        { lat: 51.483623, lng: -3.178960, title: "Dublin" } 
-    ];
-
-     var markers = locations.map(function(locations, i) {
-        return new google.maps.Marker({
-            position: locations,
-            label: labels[i % labels.length]
-        });
-    });
-
-    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 }
 
-// Hover
+var infowindow = new google.maps.InfoWindow();
 
-$( ".ports" )
-  .mouseover(function() {
-   $(".ports").css("color","blue");
+var marker, i;
+var markers = [];
+for (i = 0; i < locations.length; i++) {
+var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+    map: map,
+    label: labels[labelIndex++ % labels.length],
 });
-$( ".ports" )
-  .mouseout(function() {
-   $(".ports").css("color","white");
-});
+markers.push(marker);
+};
 
-
-$( ".leic" )
-  .mouseover(function() {
-   $(".leic").css("color","blue");
-});
-$( ".leic" )
-  .mouseout(function() {
-   $(".leic").css("color","white");
-});
-
-
-$( ".lon" )
-  .mouseover(function() {
-   $(".lon").css("color","blue");
-});
-$( ".lon" )
-  .mouseout(function() {
-   $(".lon").css("color","white");
-});
-
-
-$( ".man" )
-  .mouseover(function() {
-   $(".man").css("color","blue");
-});
-$( ".man" )
-  .mouseout(function() {
-   $(".man").css("color","white");
-});
-
-
-$( ".scot" )
-  .mouseover(function() {
-   $(".scot").css("color","blue");
-});
-$( ".scot" )
-  .mouseout(function() {
-   $(".scot").css("color","white");
-});
-
-
-$( ".car" )
-  .mouseover(function() {
-   $(".car").css("color","blue");
-});
-$( ".car" )
-  .mouseout(function() {
-   $(".car").css("color","white");
-});
-
-
-$( ".dub" )
-  .mouseover(function() {
-   $(".dub").css("color","blue");
-   var coords = latlng.split(",");
- var panPoint = new google.maps.LatLng(coords[0], coords[1]);
-   map.setZoom(12);
-      map.panTo(panPoint);
-});
-$( ".dub" )
-  .mouseout(function() {
-   $(".dub").css("color","white");
-});
-
-// zoom on map
-
-$(document).ready(function($) {
-     var coords = latlng.split(",");
- var panPoint = new google.maps.LatLng(coords[0], coords[1]);
-    $('.locations').mouseover(function pan(latlng) {
-    map.setZoom(12);
-      map.panTo(panPoint);
-   });
-// $(".markers").on('click',function pan(latlng) {
-//  
-//   map.setZoom(10); // or whatever lvl of zoom desired
-//   
-// }
-
-   //    var lat = locations[0];
-//     var lng = locations[1];
-    // $("#map","Portsmouth").mouseover();{
-    // google.maps.event.trigger(map, 'resize');    
-    // }
-   
-    //  $('.bt-googlemaps').animate({width:'710px'}, 500);
-    //  $('.bt-googlemaps').animate({height:'640px'}, 500);
-    //  
+document.addEventListener("DOMContentLoaded", function(event) { 
+     console.log(document.getElementsByClassName("portsmouthID"))
+    document.getElementsByClassName("portsmouthID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
          
+        map.panTo(new google.maps.LatLng(locations[0][1],locations[0][2]));
+        map.setZoom(8);
+        console.log(markers[0].getPosition())
+
+       
+    });
+
+     console.log(document.getElementsByClassName("leicesterID"))
+    document.getElementsByClassName("leicesterID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
+         
+        map.panTo(new google.maps.LatLng(locations[1][1],locations[1][2]));
+        map.setZoom(8);
+        console.log(markers[1].getPosition())
+
+       
+    });
+
+     console.log(document.getElementsByClassName("londonID"))
+    document.getElementsByClassName("londonID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
+         
+        map.panTo(new google.maps.LatLng(locations[2][1],locations[2][2]));
+        map.setZoom(8);
+        console.log(markers[2].getPosition())
+
+       
+    });
+
+     console.log(document.getElementsByClassName("manchesterID"))
+    document.getElementsByClassName("manchesterID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
+         
+        map.panTo(new google.maps.LatLng(locations[3][1],locations[3][2]));
+        map.setZoom(8);
+        console.log(markers[3].getPosition())
+
+       
+    });
+    console.log(document.getElementsByClassName("scotlandID"))
+    document.getElementsByClassName("scotlandID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
+         
+        map.panTo(new google.maps.LatLng(locations[4][1],locations[4][2]));
+        map.setZoom(8);
+        console.log(markers[4].getPosition())
+
+       
+    });
+ console.log(document.getElementsByClassName("cardiffID"))
+    document.getElementsByClassName("cardiffID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
+         
+        map.panTo(new google.maps.LatLng(locations[5][1],locations[5][2]));
+        map.setZoom(8);
+        console.log(markers[5].getPosition())
+
+       
+    });
+     console.log(document.getElementsByClassName("dublinID"))
+    document.getElementsByClassName("dublinID")[0].addEventListener("click", function(){
+        //    map.panTo(markers[4].getPosition());
+         
+        map.panTo(new google.maps.LatLng(locations[6][1],locations[6][2]));
+        map.setZoom(8);
+        console.log(markers[4].getPosition())
+
+       
+    });
+    
 });
