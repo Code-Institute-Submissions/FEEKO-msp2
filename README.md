@@ -62,9 +62,8 @@ In the future, I would allow users to be able to listen to the artist music on t
 
 ## Testing
 
-The website is easily accessible and allows supporters to find out more about the artist from the about me section. The many pictures of the artist give those wanting to collaborate a good understanding of her image. The videos on youtube play while on the website when pressed and show the artist talents for supporters and possible talent recruiter. The social media icons help more supporters to connect with the artist. They highlight when they hovered on and go straight to these social media sites once clicked. All links on the site and the button for Spotify open in a new tab due to the 'target="blank"'.
+The website is easily accessible and allows supporters to find out more about the artist from the about page. The many pictures of the artist give those wanting to collaborate a good understanding of his image. The videos on youtube play while on the website when pressed and show the artist talents for supporters and possible talent recruiter. The social media icons help more supporters to connect with the artist. They highlight when they hovered on and go straight to these social media sites once clicked. All links on the site and the button for Spotify open in a new tab due to the 'target="blank"'.
 
-When the buy tickets modal is pressed it highlights then pops up with a form to buy a ticket which includes button-checkboxes. The navbar links all move to the specific section of the website and the navbar stays fixed on top. 
 
 I used different browsers to test this site, this included:
 * Internet Explorer
@@ -79,7 +78,7 @@ Also, different devices were used, this includes :
 * Ipad mini
 * Ipad pro
 ### Issues fixed
-The text on the jumbotron would not center on Ipad until I added 'align-self-center'. The background on the jumbotron would appear doubled until the background-size was changed to cover. Also, the background image on the jumbotron and the holder section would appear blurry and zoomed on Ipads. This was fixed after changing the viewport height in media queries.
+
 
 ## Deployment
 This website is hosted on [Github Pages](https://coexisting.github.io/Milestone-Project-1/) deployed using the master branch, explained [Here](https://help.github.com/en/github/getting-started-with-github/create-a-repo). The deployed site updates automatically upon new commits to the master branch. For the site to deploy correctly on GitHub pages, the landing page must be named index.html. This along with the Read.Me can be found in the root folder.
