@@ -38,16 +38,17 @@ The web page has mutiple pages with one page that opens directly to their spotif
   * CSS 
   * JS
   * framework (grid system, buttons, modals, jumbotron, cards)- This makes the website more interactive and is easier for users to use. 
-* responsive design- mobile-first - This ensures that users on any device can easily use this website.
+* Interactive google maps API
 * GitHub -Remote Repository- Allows cohesive and easy collaborations, which helps to create a smooth and responsive website.
 * GitHub pages - Deployed
 
 ### Future Features 
-In the future, I would like to create animations alongside videos to make the website more interactive.
+In the future, I would allow users to be able to listen to the artist music on the site while browsing. 
 
 ## Technologies used
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML#:~:targetText=HTML%20(HyperText%20Markup%20Language)%20is,functionality%2Fbehavior%20(JavaScript).)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS#:~:targetText=Cascading%20Style%20Sheets%20(CSS)%20is,speech%2C%20or%20on%20other%20media.)
+* [JS](https://www.javascript.com/)
 * [Google chrome](https://www.google.com/chrome/)
 * [Google](https://www.google.com/)
 * [Bootstrap](https://getbootstrap.com/)
@@ -55,7 +56,8 @@ In the future, I would like to create animations alongside videos to make the we
 * [Github](https://github.com/)
 * [Slack](https://slack.com/intl/en-gb/)
 * [Youtube](https://www.youtube.com/)
-
+* [Google Maps](https://www.javascript.com/)
+ * [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial?_ga=2.55997547.1334074779.1589732132-787921703.1589732054)
 
 ## Testing
 
