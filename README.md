@@ -51,13 +51,14 @@ In the future, I would allow users to be able to listen to the artist music on t
 * [JS](https://www.javascript.com/)
 * [Google chrome](https://www.google.com/chrome/)
 * [Google](https://www.google.com/)
+  * [Google Maps](https://www.javascript.com/)
+    * [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial?_ga=2.55997547.1334074779.1589732132-787921703.1589732054)
 * [Bootstrap](https://getbootstrap.com/)
 * [Visual Studio One](https://code.visualstudio.com/)
 * [Github](https://github.com/)
 * [Slack](https://slack.com/intl/en-gb/)
 * [Youtube](https://www.youtube.com/)
-* [Google Maps](https://www.javascript.com/)
-  * [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorial?_ga=2.55997547.1334074779.1589732132-787921703.1589732054)
+
 
 ## Testing
 
