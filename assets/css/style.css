@@ -1,6 +1,7 @@
 body {
   text-align: center;
-  
+ 
+  max-width: 768px;
 }
 
 
@@ -97,7 +98,12 @@ p {
   text-decoration: #f2e2e2;
 
 }
-
+#map {
+			height: 50px;
+            width:50px;
+            
+           
+		}
 #break{
     margin: 20px;
 }
@@ -113,7 +119,7 @@ a{
 /* Footer */
 
 #footer {
-  width: 100%;
+  width: 50px;
   margin: auto;
   font-size: 2rem;
 }
@@ -196,6 +202,13 @@ a{
  margin: 0px;
  padding: 0px;
 }
+
+#map {
+			height: 100px;
+            width:100px;
+            margin: 40px;
+           
+		}
 iframe {
   height: 200px;
     width: 300px;
