@@ -25,7 +25,7 @@ The color scheme consists of pink, black and white for a clean and modern look, 
 ### Mockups
 The web page has mutiple pages with one page that opens directly to their spotify. This can be seen in the wireframe:
 
-* [Wireframe](https://www.figma.com/file/K0h1YMwVfOuaEDlAAfSLjz/EDR-project-wireframe?node-id=0%3A1)
+* [Wireframe](https://www.figma.com/file/5RMGbNNKPlEp4CalK8cPbX/Feeko--MS2?node-id=0%3A1)
 
 ## Features
 
