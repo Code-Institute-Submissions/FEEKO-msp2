@@ -26,13 +26,7 @@ body {
 
 
 /*Navbar*/
-nav {
-  align-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  position: relative;
-  min-height: 50px;
-}
+
 .mobileshow{
   text-align: center;
   display: inline;
@@ -179,6 +173,13 @@ a{
     margin: 10px 100px;
     
   }
+  nav {
+  align-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+  min-height: 50px;
+}
 
   #frontpage {
     background-image: none;
