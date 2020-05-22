@@ -4,7 +4,7 @@
 A website that displays content and upcoming shows for an upcoming rapper to reach out to their audience. The website also allows users to view the locations of concerts with google maps api. It will increase the artist sales, streams and opportunity to get signed or have endorsements from companies.
 
 ## UX design
-![Image of demo](Documentation/responsive.png)
+![Image of demo](Documentation/feeks-demo.png)
 
 ## User
 The users of this site are current supporters, future supporters, and talent agencies or record labels.
