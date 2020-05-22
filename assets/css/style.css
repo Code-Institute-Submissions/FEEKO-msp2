@@ -94,11 +94,10 @@ p {
 
 }
 #map {
-			height: 200px;
-            widows: 200px;
-            
-           
-		}
+height: 200px;
+widows: 200px;
+}
+
 #break{
     margin: 20px;
 }
@@ -130,7 +129,7 @@ iframe {
 #lab_social_icon_footer {
  
  margin: 50px;
- position: sticky;
+ position: static;
 }
 
 
@@ -154,7 +153,7 @@ iframe {
   -o-transition-duration: 0.5s;
 }
 /*
-    Multicoloured Hover Variations
+   Icon colours
 */
 
 #lab_social_icon_footer #social-fb:hover {
@@ -172,24 +171,30 @@ iframe {
 #lab_social_icon_footer #social-em:hover {
   color: #f39c12;
 }
+
+
 /*desktop*/
 
-@media (min-width:1024px) and (max-width:1281px) {
+@media (min-width:1024px) and (max-width:1440px) {
   body {
-    width: 100%;
-
+   min-width: 1024px;
+   max-width: 1440px;
     text-align: center;
     font-family: bold Volkhov;
-    margin: 10px 100px;
     
   }
-  nav {
+
+   div ul {
   align-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   min-height: 50px;
-}
+  display: inline-block;
+list-style-type: none;
+  
+} 
+
 
   #frontpage {
     background-image: none;
@@ -209,15 +214,26 @@ iframe {
     display: none;
 }
 
+#ppage {
+  margin: 0px;
+ padding: 0px;
+  
+}
 #bpage {
  margin: 0px;
  padding: 0px;
 }
+p{
+    margin: 5px 50px;
+}
 
+img{
+    margin: 0px 50px;
+}
 #map {
-			height: 100px;
-            width:100px;
-            margin: 40px;
+height: 300px;
+ width:400px;
+ margin: 40px;
            
 		}
 iframe {
