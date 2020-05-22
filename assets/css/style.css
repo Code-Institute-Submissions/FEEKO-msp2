@@ -178,7 +178,7 @@ iframe {
 
 /*desktop*/
 
-@media (min-width:1024px) and (max-width:1440px) {
+@media (min-width:1024px) and (max-width:1600px) {
   body {
    min-width: 1024px;
    max-width: 1600px;
