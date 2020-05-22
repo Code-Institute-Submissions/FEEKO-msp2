@@ -1,7 +1,8 @@
 body {
   text-align: center;
+  width: 100%;
  
-  max-width: 768px;
+ 
 }
 
 
@@ -93,8 +94,8 @@ p {
 
 }
 #map {
-			height: 50px;
-            width:50px;
+			height: 200px;
+            widows: 200px;
             
            
 		}
@@ -109,6 +110,13 @@ tr{
 
 a{
     color: white;
+
+}
+
+iframe {
+ 
+    text-align: center;
+    margin: 30px 0px;
 }
 /* Footer */
 
@@ -116,11 +124,13 @@ a{
   width: 50px;
   margin: auto;
   font-size: 2rem;
+ 
 }
 
 #lab_social_icon_footer {
-  padding: 20px ;
+ 
  margin: 50px;
+ position: sticky;
 }
 
 
@@ -164,10 +174,10 @@ a{
 }
 /*desktop*/
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) and (max-width:1281px) {
   body {
     width: 100%;
-    max-width:1024px ;
+
     text-align: center;
     font-family: bold Volkhov;
     margin: 10px 100px;
@@ -211,16 +221,16 @@ a{
            
 		}
 iframe {
-  height: 200px;
-    width: 300px;
+  height: 600px;
+    width: 1000px;
     text-align: center;
-    margin: auto;
+   
 }
 
 .video-container {
 position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px;
+padding-bottom: 700px;
+padding-top: 5px;
 height: 0;
 
 }
